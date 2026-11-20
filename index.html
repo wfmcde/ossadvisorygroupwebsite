@@ -473,23 +473,23 @@
           <textarea id="detailsInput" rows="3" placeholder="Tell us about your program governance challenge, team workshop, or personal AI coaching goals..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-emerald-600" required></textarea>
         </div>
         <button type="submit" class="w-full bg-slate-900 hover:bg-emerald-600 text-white py-3 rounded-lg font-semibold text-sm transition-colors cursor-pointer">
-          Prepare &amp; Send Inquiry
+          Send Inquiry
         </button>
       </form>
 
       <div id="formConfirmation" class="hidden text-center py-6">
-        <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-3 text-xl font-bold">&#10003;</div>
-        <h4 class="text-lg font-bold text-slate-900">Inquiry Ready</h4>
-        <p class="text-sm text-slate-600 mt-1 mb-5">Your message summary is ready to send directly to Operating Support Services, LLC.</p>
-        <div class="flex flex-wrap justify-center gap-3">
-          <a id="mailtoFallback" href="#" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
-            Open in Email App &rarr;
-          </a>
-          <button onclick="closeContactModal()" class="bg-slate-200 hover:bg-slate-300 text-slate-800 px-5 py-2.5 rounded-lg text-sm font-medium cursor-pointer">
-            Close
-          </button>
-        </div>
-      </div>
+       <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-3 text-xl font-bold">&#10003;</div>
+       <h4 class="text-lg font-bold text-slate-900">Inquiry Sent</h4>
+       <p class="text-sm text-slate-600 mt-1 mb-5">Thank you &mdash; your message has been delivered directly to Operating Support Services, LLC.</p>
+       <div class="flex flex-col items-center gap-3">
+         <button onclick="closeContactModal()" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors cursor-pointer">
+           Close
+         </button>
+         <a id="mailtoFallback" href="#" class="text-xs text-slate-500 hover:text-emerald-700 underline transition-colors">
+           Prefer to send a copy via your email app? &rarr;
+         </a>
+       </div>
+     </div>
     </div>
   </div>
 
