@@ -95,10 +95,15 @@
               alt="William and Debra McDermott at their Puget Sound office desk overlooking Bainbridge ferry and the Olympic Mountains"
               class="w-full h-[360px] md:h-[410px] object-cover object-center block"
             />
-            <div class="bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent px-6 py-4 flex items-center justify-between">
+            <div class="bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent px-6 py-4 flex flex-wrap items-center justify-between gap-3">
               <div>
                 <p class="text-sm font-semibold text-white">William &amp; Debra McDermott</p>
                 <p class="text-xs text-slate-300">Managing Principals &bull; Seattle &amp; Puget Sound Advisory</p>
+                <div class="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
+                   <a href="mailto:bill@ossadvisorygroup.com" class="text-emerald-400 hover:text-emerald-300 transition-colors">bill@ossadvisorygroup.com</a>
+                   <span class="text-slate-600">&bull;</span>
+                   <a href="mailto:debra@ossadvisorygroup.com" class="text-emerald-400 hover:text-emerald-300 transition-colors">debra@ossadvisorygroup.com</a>
+                </div>
               </div>
               <span class="text-xs font-medium text-emerald-400 bg-slate-900/80 border border-slate-700 px-3 py-1 rounded-full">
                 Direct Principal Engagement
@@ -441,6 +446,14 @@
       <p class="text-sm text-slate-600 mb-6">Share a brief note on your initiative or AI goals. You'll work directly with Bill or Debra.</p>
 
       <form id="inquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+       <div>
+          <label for="recipientSelect" class="block text-xs font-semibold uppercase text-slate-600 mb-1">Direct To</label>
+          <select id="recipientSelect" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm bg-white text-slate-900 focus:outline-none focus:border-emerald-600">
+            <option value="bill@ossadvisorygroup.com">William (Bill) McDermott — bill@ossadvisorygroup.com</option>
+            <option value="debra@ossadvisorygroup.com">Debra McDermott — debra@ossadvisorygroup.com</option>
+            <option value="bill@ossadvisorygroup.com,debra@ossadvisorygroup.com">Both Principals — Bill &amp; Debra McDermott</option>
+          </select>
+        </div>
         <div>
           <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Topic of Interest</label>
           <input id="topicInput" type="text" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-emerald-600" required />
@@ -522,8 +535,8 @@
 
       const subject = encodeURIComponent(`[OSS Advisory Inquiry] ${topic} — ${name}`);
       const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nTopic: ${topic}\n\nDetails:\n${details}`);
-      document.getElementById('mailtoFallback').href = `mailto:bill@ossadvisorygroup.com?subject=${subject}&body=${body}`;
-
+      const recipient = document.getElementById('recipientSelect')?.value || 'bill@ossadvisorygroup.com';
+document.getElementById('mailtoFallback').href = `mailto:${recipient}?subject=${subject}&body=${body}`;
       document.getElementById('inquiryForm').classList.add('hidden');
       document.getElementById('formConfirmation').classList.remove('hidden');
     }
