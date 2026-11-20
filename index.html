@@ -51,6 +51,7 @@
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
         <a href="#philosophy" class="hover:text-slate-900 transition-colors">Philosophy</a>
         <a href="#capabilities" class="hover:text-slate-900 transition-colors">Capabilities</a>
+        <a href="#ai-feed" class="hover:text-slate-900 transition-colors">AI Feed</a>
         <a href="#leadership" class="hover:text-slate-900 transition-colors">Leadership</a>
         <button onclick="openContactModal('General Advisory Inquiry')" class="bg-slate-900 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-lg font-medium transition-colors cursor-pointer">
           Schedule Consultation
@@ -265,6 +266,93 @@
     </div>
   </section>
 
+  <!-- AI Updates Feed & Starter Walkthroughs -->
+  <section id="ai-feed" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-widest text-emerald-700">Signal &amp; Enablement</span>
+          <h2 class="text-3xl font-bold text-slate-900 mt-2">AI Signal Feed &amp; Starter Walkthroughs</h2>
+          <p class="text-slate-600 mt-2 max-w-2xl">
+            Automated AI updates paired with practical walkthroughs and governance guides—built to help leaders and everyday users start simply and stay grounded.
+          </p>
+        </div>
+        <span id="feedStatus" class="text-xs font-medium text-slate-500 bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-full self-start md:self-auto">
+          Syncing feed...
+        </span>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Left Column: Automated AI Feed (7 cols) -->
+        <div class="lg:col-span-7 bg-slate-50 rounded-2xl p-6 md:p-8 border border-slate-200">
+          <div class="flex items-center justify-between mb-5">
+            <h3 class="text-lg font-bold text-slate-900">Latest AI Updates</h3>
+            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-700">Automated Stream</span>
+          </div>
+
+          <div id="aiFeedList" class="divide-y divide-slate-200">
+            <!-- Populated automatically by script below -->
+          </div>
+        </div>
+
+        <!-- Right Column: Curated Videos & Guides (5 cols) -->
+        <div class="lg:col-span-5 space-y-5">
+          <div class="rounded-2xl p-6 bg-slate-900 text-white border border-slate-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-emerald-400">How Easy AI Can Be</span>
+            <h3 class="text-xl font-bold mt-1 mb-4">Beginner &amp; Practical Video Guides</h3>
+
+            <div class="space-y-4 text-sm">
+              <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80">
+                <p class="font-semibold text-white">How to Use AI Like a Pro (Beginner's Guide 2026)</p>
+                <p class="text-slate-300 text-xs mt-1 leading-relaxed">
+                  Straightforward walkthrough on writing clear prompts, catching AI mistakes, and building simple daily habits.
+                </p>
+                <a href="https://www.youtube.com/watch?v=2-zQLTp9yyc" target="_blank" rel="noopener noreferrer" class="inline-block mt-2.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300">
+                  Watch on YouTube &rarr;
+                </a>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80">
+                <p class="font-semibold text-white">How to Actually Use AI Tools in 2026 (Full Guide)</p>
+                <p class="text-slate-300 text-xs mt-1 leading-relaxed">
+                  Broader look at everyday AI tools and practical ways to put them to work without getting overwhelmed.
+                </p>
+                <a href="https://www.youtube.com/watch?v=HPw4eiqOZfU" target="_blank" rel="noopener noreferrer" class="inline-block mt-2.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300">
+                  Watch on YouTube &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl p-6 bg-slate-50 border border-slate-200">
+            <span class="text-xs font-semibold uppercase tracking-widest text-emerald-700">Playbooks &amp; Guardrails</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-1 mb-3">Leadership &amp; Workflow References</h3>
+            <ul class="space-y-3 text-sm">
+              <li>
+                <a href="https://larridin.com/solutions/ai-governance-the-complete-enterprise-guide-2026" target="_blank" rel="noopener noreferrer" class="font-semibold text-slate-900 hover:text-emerald-700">
+                  AI Governance: The Complete Enterprise Guide 2026 &rarr;
+                </a>
+                <p class="text-xs text-slate-600 mt-0.5">Risk tiering, sanctioned vs. unsanctioned tools, and NIST/ISO alignment.</p>
+              </li>
+              <li>
+                <a href="https://www.liminal.ai/blog/enterprise-ai-governance-guide" target="_blank" rel="noopener noreferrer" class="font-semibold text-slate-900 hover:text-emerald-700">
+                  Enterprise AI Governance: Complete Implementation Guide (2026) &rarr;
+                </a>
+                <p class="text-xs text-slate-600 mt-0.5">Practical rollout steps and operational guardrails for organizations.</p>
+              </li>
+              <li>
+                <a href="https://toolmindai.com/ai-for-youtube-content-creation/" target="_blank" rel="noopener noreferrer" class="font-semibold text-slate-900 hover:text-emerald-700">
+                  How to Use AI for YouTube Content Creation in 2026 &rarr;
+                </a>
+                <p class="text-xs text-slate-600 mt-0.5">Human verification, lived experience, and transparent AI disclosure.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Leadership / Principals Section -->
   <section id="leadership" class="py-20 bg-white border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-6">
@@ -439,6 +527,78 @@
       document.getElementById('inquiryForm').classList.add('hidden');
       document.getElementById('formConfirmation').classList.remove('hidden');
     }
+
+    // Point this to a JSON feed endpoint (such as a Cloudflare Worker that fetches & caches an RSS feed)
+    const AI_FEED_ENDPOINT = '';
+
+    const FALLBACK_AI_ITEMS = [
+      {
+        title: 'Start with One Daily Task Before Scaling Workflows',
+        source: 'OSS Advisory Note',
+        date: 'Current',
+        summary: 'Pick a repeatable personal or team task—drafting, summarizing notes, or structuring a plan—and verify outputs before automating.',
+        url: 'https://www.youtube.com/watch?v=2-zQLTp9yyc'
+      },
+      {
+        title: 'Keep Guardrails Clear as Teams Adopt AI Tools',
+        source: 'Governance & Risk',
+        date: 'Current',
+        summary: 'Define approved tools, protect sensitive data, and pair fast prototyping with clear human review checkpoints.',
+        url: 'https://larridin.com/solutions/ai-governance-the-complete-enterprise-guide-2026'
+      },
+      {
+        title: 'Human Judgment Remains the Differentiator',
+        source: 'Leadership Perspective',
+        date: 'Current',
+        summary: 'AI speeds up drafting and exploration, while domain context, accountability, and clear decisions stay with people.',
+        url: 'https://www.liminal.ai/blog/enterprise-ai-governance-guide'
+      }
+    ];
+
+    function renderAiFeed(items, statusText) {
+      const listEl = document.getElementById('aiFeedList');
+      const statusEl = document.getElementById('feedStatus');
+      if (!listEl) return;
+
+      listEl.innerHTML = items.slice(0, 5).map(item => `
+        <article class="py-4 first:pt-0 last:pb-0">
+          <div class="flex items-center justify-between gap-2 text-xs text-slate-500 mb-1">
+            <span class="font-semibold text-emerald-700">${item.source || 'AI Update'}</span>
+            <span>${item.date || ''}</span>
+          </div>
+          <h4 class="font-semibold text-slate-900 text-base leading-snug">
+            <a href="${item.url || '#ai-feed'}" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-700 transition-colors">
+              ${item.title}
+            </a>
+          </h4>
+          ${item.summary ? `<p class="text-sm text-slate-600 mt-1 leading-relaxed">${item.summary}</p>` : ''}
+        </article>
+      `).join('');
+
+      if (statusEl && statusText) {
+        statusEl.textContent = statusText;
+      }
+    }
+
+    async function loadAiFeed() {
+      if (!AI_FEED_ENDPOINT) {
+        renderAiFeed(FALLBACK_AI_ITEMS, 'Curated starter feed (ready for live endpoint)');
+        return;
+      }
+
+      try {
+        const res = await fetch(AI_FEED_ENDPOINT);
+        if (!res.ok) throw new Error('Feed request failed');
+        const data = await res.json();
+        const items = Array.isArray(data) ? data : (data.items || []);
+        if (!items.length) throw new Error('Empty feed');
+        renderAiFeed(items, 'Live automated feed');
+      } catch (err) {
+        renderAiFeed(FALLBACK_AI_ITEMS, 'Showing curated highlights');
+      }
+    }
+
+    loadAiFeed();
   </script>
 </body>
 </html>
