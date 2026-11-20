@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operating Support Services, LLC | Executive Program Governance &amp; AI Adoption</title>
+  <meta name="description" content="Operating Support Services, LLC (ossadvisorygroup.com) — Executive program management, business consulting, and practical AI adoption for organizations and leaders." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            slate: {
+              850: '#172033',
+              900: '#0F172A',
+              950: '#090E1A',
+            },
+            emerald: {
+              500: '#10B981',
+              600: '#059669',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-600 selection:text-white">
+
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold tracking-wider text-sm group-hover:bg-emerald-600 transition-colors">
+          OSS
+        </div>
+        <div>
+          <span class="block font-bold text-slate-900 leading-tight">Operating Support Services</span>
+          <span class="block text-xs text-slate-500 tracking-wide uppercase">ossadvisorygroup.com</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#philosophy" class="hover:text-slate-900 transition-colors">Philosophy</a>
+        <a href="#capabilities" class="hover:text-slate-900 transition-colors">Capabilities</a>
+        <a href="#leadership" class="hover:text-slate-900 transition-colors">Leadership</a>
+        <button onclick="openContactModal('General Advisory Inquiry')" class="bg-slate-900 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-lg font-medium transition-colors cursor-pointer">
+          Schedule Consultation
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-slate-900 text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#10B981_1px,transparent_1px)] [background-size:24px_24px]"></div>
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Column: Positioning -->
+        <div class="lg:col-span-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-emerald-400 text-xs font-medium tracking-wide mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            OPERATING SUPPORT SERVICES, LLC
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
+            Executive Program Governance &amp; <span class="text-emerald-400">Practical AI Adoption</span>
+          </h1>
+          <p class="text-lg text-slate-300 leading-relaxed mb-8">
+            Bridging enterprise-scale program delivery with hands-on AI enablement for businesses, leaders, and individuals. We turn complex initiatives and emerging AI tools into measurable, human-centered results.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button onclick="openContactModal('Executive Advisory Consultation')" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3.5 rounded-lg font-semibold transition-colors cursor-pointer">
+              Schedule Consultation &rarr;
+            </button>
+            <a href="#capabilities" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-6 py-3.5 rounded-lg font-medium transition-colors">
+              Explore Capabilities
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Principals Portrait -->
+        <div class="lg:col-span-6">
+          <div class="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl bg-slate-800">
+            <img
+              src="hero-principals.png"
+              alt="William and Debra McDermott at their Puget Sound office desk overlooking Bainbridge ferry and the Olympic Mountains"
+              class="w-full h-[360px] md:h-[410px] object-cover object-center block"
+            />
+            <div class="bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent px-6 py-4 flex items-center justify-between">
+              <div>
+                <p class="text-sm font-semibold text-white">William &amp; Debra McDermott</p>
+                <p class="text-xs text-slate-300">Managing Principals &bull; Seattle &amp; Puget Sound Advisory</p>
+              </div>
+              <span class="text-xs font-medium text-emerald-400 bg-slate-900/80 border border-slate-700 px-3 py-1 rounded-full">
+                Direct Principal Engagement
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Metrics Bar -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14 pt-10 border-t border-slate-800 text-sm">
+        <div>
+          <span class="block text-2xl font-bold text-white">30+ Yrs</span>
+          <span class="text-slate-400">Enterprise Leadership</span>
+        </div>
+        <div>
+          <span class="block text-2xl font-bold text-white">Fortune 500</span>
+          <span class="text-slate-400">Circle K, IBM &amp; Siemens</span>
+        </div>
+        <div>
+          <span class="block text-2xl font-bold text-white">Dual Focus</span>
+          <span class="text-slate-400">Enterprise &amp; Personal AI</span>
+        </div>
+        <div>
+          <span class="block text-2xl font-bold text-white">Prototype-First</span>
+          <span class="text-slate-400">Rapid, Safe Execution</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guiding Philosophy / Remato Banner -->
+  <section id="philosophy" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-slate-50 border-l-4 border-emerald-600 rounded-r-2xl p-8 md:p-10 shadow-sm">
+        <div class="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-3">
+          &#9733; Our Guiding Philosophy
+        </div>
+        <blockquote class="font-serif italic text-2xl md:text-3xl text-slate-900 leading-relaxed mb-4">
+          &ldquo;AI itself won't take jobs away from people&mdash;people who master AI will take jobs from those who don't. We partner with leaders and individuals to ensure they lead that shift rather than get left behind by it.&rdquo;
+        </blockquote>
+        <p class="text-slate-600 text-base leading-relaxed">
+          Empowering professionals and organizations to adopt AI with confidence, clarity, and practical guardrails&mdash;whether governing multi-million-dollar enterprise systems or mastering AI in your personal daily workflow.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section with Interactive Filter -->
+  <section id="capabilities" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-widest text-emerald-700">What We Deliver</span>
+          <h2 class="text-3xl font-bold text-slate-900 mt-2">Core Advisory &amp; Enablement Pillars</h2>
+        </div>
+
+        <!-- Interactive Filter Tabs -->
+        <div class="inline-flex flex-wrap gap-2 bg-white p-1.5 rounded-xl border border-slate-200 shadow-sm">
+          <button onclick="filterCapabilities('all', this)" class="filter-btn active px-4 py-2 rounded-lg text-sm font-medium bg-slate-900 text-white transition-colors cursor-pointer">
+            All Services
+          </button>
+          <button onclick="filterCapabilities('enterprise', this)" class="filter-btn px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors cursor-pointer">
+            Enterprise &amp; PMO
+          </button>
+          <button onclick="filterCapabilities('ai-business', this)" class="filter-btn px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors cursor-pointer">
+            Business AI Adoption
+          </button>
+          <button onclick="filterCapabilities('ai-personal', this)" class="filter-btn px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors cursor-pointer">
+            Personal AI Coaching
+          </button>
+        </div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Card 1: Enterprise Program Governance -->
+        <div data-category="enterprise" class="capability-card bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center font-bold text-lg mb-6">
+              01
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Enterprise Delivery</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Enterprise Program &amp; Vendor Governance</h3>
+            <p class="text-slate-600 leading-relaxed mb-6">
+              Executive oversight for high-stakes cloud migrations, infrastructure refreshes, legacy data transformations, and multi-vendor accountability. We establish clear operational cadence, risk remediation, and executive reporting.
+            </p>
+            <ul class="space-y-2 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Cloud Migration &amp; Hardware Refresh Turnarounds</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Vendor Accountability &amp; SLA Remediation</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Legacy Data Pipeline &amp; Continuity Safeguards</li>
+            </ul>
+          </div>
+          <button onclick="openContactModal('Enterprise Program & Vendor Governance')" class="text-sm font-semibold text-emerald-700 hover:text-emerald-600 inline-flex items-center gap-1 cursor-pointer">
+            Inquire about Program Governance &rarr;
+          </button>
+        </div>
+
+        <!-- Card 2: AI Governance & Agentic Systems -->
+        <div data-category="ai-business" class="capability-card bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-lg mb-6">
+              02
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-700">Business AI Adoption</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">AI Governance &amp; Agentic Workflow Design</h3>
+            <p class="text-slate-600 leading-relaxed mb-6">
+              Move beyond AI hype into safe, repeatable business execution. Using a "prototype-first, then production" methodology, we design architectural guardrails, intake workflows, and practical AI copilots tailored to your team.
+            </p>
+            <ul class="space-y-2 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Enterprise AI Governance &amp; Guardrail Frameworks</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Rapid Conversational Prototyping to Production Specs</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Team Enablement &amp; Workflow Automation</li>
+            </ul>
+          </div>
+          <button onclick="openContactModal('Business AI Governance & Workflow Design')" class="text-sm font-semibold text-emerald-700 hover:text-emerald-600 inline-flex items-center gap-1 cursor-pointer">
+            Inquire about Business AI Adoption &rarr;
+          </button>
+        </div>
+
+        <!-- Card 3: PMO & Agile Transformation -->
+        <div data-category="enterprise" class="capability-card bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center font-bold text-lg mb-6">
+              03
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Operational Excellence</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">PMO Modernization &amp; Agile Coaching</h3>
+            <p class="text-slate-600 leading-relaxed mb-6">
+              Right-sized project management offices, Scrum adoption, and collaborative tooling architecture (Smartsheet, Asana, executive dashboards) built to eliminate status-meeting bloat and accelerate delivery.
+            </p>
+            <ul class="space-y-2 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Certified ScrumMaster &amp; Agile Team Leadership</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Smartsheet &amp; Portfolio Visibility Architecture</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Custom Executive &amp; Team Workshops</li>
+            </ul>
+          </div>
+          <button onclick="openContactModal('PMO Modernization & Agile Coaching')" class="text-sm font-semibold text-emerald-700 hover:text-emerald-600 inline-flex items-center gap-1 cursor-pointer">
+            Inquire about PMO Advisory &rarr;
+          </button>
+        </div>
+
+        <!-- Card 4: Individual & Executive AI Mastery -->
+        <div data-category="ai-personal" class="capability-card bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-lg mb-6">
+              04
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-700">Personal AI Adoption</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">1-on-1 AI Fluency for Leaders &amp; Professionals</h3>
+            <p class="text-slate-600 leading-relaxed mb-6">
+              Personalized, judgment-free coaching to help executives, independent professionals, and lifelong learners integrate AI into daily research, writing, planning, and decision-making—turning hesitation into an unfair advantage.
+            </p>
+            <ul class="space-y-2 text-sm text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Practical Prompting &amp; Personal Productivity Systems</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Building Custom Personal Tools Without Heavy Coding</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> Safe Privacy, Verification &amp; Critical Thinking Habits</li>
+            </ul>
+          </div>
+          <button onclick="openContactModal('1-on-1 Personal AI Coaching')" class="text-sm font-semibold text-emerald-700 hover:text-emerald-600 inline-flex items-center gap-1 cursor-pointer">
+            Book a Personal AI Session &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership / Principals Section -->
+  <section id="leadership" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mb-14">
+        <span class="text-xs font-semibold uppercase tracking-widest text-emerald-700">Managing Principals</span>
+        <h2 class="text-3xl font-bold text-slate-900 mt-2">Seasoned Operators, Not Career Theorists</h2>
+        <p class="text-slate-600 mt-3 leading-relaxed">
+          Every engagement is led directly by our principals—combining decades of Fortune 500 enterprise delivery, financial governance, and hands-on AI systems engineering.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Bill McDermott -->
+        <div class="rounded-2xl border border-slate-200 p-8 bg-slate-50">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-lg">
+              WM
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900">William (Bill) McDermott</h3>
+              <p class="text-sm font-medium text-emerald-700">Managing Director &amp; Principal Advisor</p>
+            </div>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            Senior Program Manager and AI Governance architect with over three decades leading multi-million-dollar enterprise outsourcing, cloud migrations, and infrastructure programs at Circle K, IBM, and Siemens. Specializes in bridging executive governance with rapid AI prototyping and adoption.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-700">Certified ScrumMaster (CSM)</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-700">Google AI Professional</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-700">Strategic AI Governance</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-700">Agentic AI Systems</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-700">Smartsheet Certified</span>
+          </div>
+        </div>
+
+        <!-- Debra McDermott -->
+        <div class="rounded-2xl border border-slate-200 p-8 bg-slate-50">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-lg">
+              DM
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900">Debra McDermott</h3>
+              <p class="text-sm font-medium text-emerald-700">Managing Principal &amp; Program Consultant</p>
+            </div>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            Experienced program consultant, workshop facilitator, and operational advisor. Brings deep expertise in cross-functional stakeholder alignment, executive training workshops, and translating complex organizational initiatives into clear, actionable team execution.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-700">Program &amp; Project Delivery</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-700">Executive Workshop Facilitation</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-700">Stakeholder Alignment</span>
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-700">Practical AI Enablement</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA & Footer -->
+  <footer class="bg-slate-900 text-slate-300 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-12 border-b border-slate-800">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-white">Ready to modernize your delivery or master AI?</h2>
+          <p class="text-slate-400 mt-2">Available for selective fractional advisory, program turnarounds, and 1-on-1 executive AI coaching.</p>
+        </div>
+        <button onclick="openContactModal('Advisory & AI Enablement Inquiry')" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3.5 rounded-lg font-semibold transition-colors shrink-0 cursor-pointer">
+          Start a Conversation
+        </button>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <p>&copy; 2026 Operating Support Services, LLC (<span class="text-slate-400">ossadvisorygroup.com</span>). All rights reserved.</p>
+        <p>Seattle, WA &bull; Enterprise Governance &amp; AI Adoption</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Consultation Modal -->
+  <div id="contactModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/70 backdrop-blur-sm p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl border border-slate-200 relative">
+      <button onclick="closeContactModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 text-xl font-bold cursor-pointer">&times;</button>
+      <span class="text-xs font-semibold uppercase tracking-widest text-emerald-700">Direct Principal Inquiry</span>
+      <h3 class="text-2xl font-bold text-slate-900 mt-1 mb-2">Connect with Operating Support Services</h3>
+      <p class="text-sm text-slate-600 mb-6">Share a brief note on your initiative or AI goals. You'll work directly with Bill or Debra.</p>
+
+      <form id="inquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Topic of Interest</label>
+          <input id="topicInput" type="text" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-emerald-600" required />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Your Name</label>
+            <input id="nameInput" type="text" placeholder="Jane Doe" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-emerald-600" required />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Email Address</label>
+            <input id="emailInput" type="email" placeholder="jane@company.com" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-emerald-600" required />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">How Can We Help?</label>
+          <textarea id="detailsInput" rows="3" placeholder="Tell us about your program governance challenge, team workshop, or personal AI coaching goals..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-emerald-600" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-slate-900 hover:bg-emerald-600 text-white py-3 rounded-lg font-semibold text-sm transition-colors cursor-pointer">
+          Prepare &amp; Send Inquiry
+        </button>
+      </form>
+
+      <div id="formConfirmation" class="hidden text-center py-6">
+        <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-3 text-xl font-bold">&#10003;</div>
+        <h4 class="text-lg font-bold text-slate-900">Inquiry Ready</h4>
+        <p class="text-sm text-slate-600 mt-1 mb-5">Your message summary is ready to send directly to Operating Support Services, LLC.</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <a id="mailtoFallback" href="#" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+            Open in Email App &rarr;
+          </a>
+          <button onclick="closeContactModal()" class="bg-slate-200 hover:bg-slate-300 text-slate-800 px-5 py-2.5 rounded-lg text-sm font-medium cursor-pointer">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function filterCapabilities(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-slate-900', 'text-white');
+        b.classList.add('text-slate-600');
+      });
+      btn.classList.add('bg-slate-900', 'text-white');
+      btn.classList.remove('text-slate-600');
+
+      document.querySelectorAll('.capability-card').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    function openContactModal(topic) {
+      document.getElementById('topicInput').value = topic;
+      document.getElementById('inquiryForm').classList.remove('hidden');
+      document.getElementById('formConfirmation').classList.add('hidden');
+      const modal = document.getElementById('contactModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeContactModal() {
+      const modal = document.getElementById('contactModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const topic = document.getElementById('topicInput').value;
+      const name = document.getElementById('nameInput').value;
+      const email = document.getElementById('emailInput').value;
+      const details = document.getElementById('detailsInput').value;
+
+      const subject = encodeURIComponent(`[OSS Advisory Inquiry] ${topic} — ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nTopic: ${topic}\n\nDetails:\n${details}`);
+      document.getElementById('mailtoFallback').href = `mailto:bill@ossadvisorygroup.com?subject=${subject}&body=${body}`;
+
+      document.getElementById('inquiryForm').classList.add('hidden');
+      document.getElementById('formConfirmation').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
