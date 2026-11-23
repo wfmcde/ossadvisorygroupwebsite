@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Six-Year Rolling Tax &amp; Retirement Planner (Preview) | Operating Support Services, LLC</title>
+  <meta
+    name="description"
+    content="Architectural preview of a six-year rolling S-Corp tax, state apportionment, and retirement cash-flow modeling application by Operating Support Services, LLC."
+  />
+  <style>
+    :root {
+      --bg-page: #f8fafc;
+      --bg-surface: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --accent: #047857;
+      --border: rgba(15, 23, 42, 0.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+    .topbar {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+    }
+    .topbar-inner, .page-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .back-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .back-link:hover { text-decoration: underline; }
+    .page-wrap { padding: 3rem 1.5rem 4.5rem; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      margin: 0 0 1rem;
+      font-size: 2.15rem;
+      line-height: 1.2;
+    }
+    .lead {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      max-width: 780px;
+      margin: 0 0 2.25rem;
+    }
+    .preview-frame {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.25rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    }
+    .preview-placeholder {
+      background: linear-gradient(135deg, #ecfdf5 0%, #f1f5f9 100%);
+      border: 1px dashed #6ee7b7;
+      border-radius: 10px;
+      padding: 3.5rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+    }
+    .preview-frame img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+    .preview-caption {
+      margin: 0.9rem 0 0;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+    .pillar-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.4rem;
+    }
+    .pillar-card h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.08rem;
+    }
+    .pillar-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+    .scope-note {
+      background: #f1f5f9;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.15rem 1.35rem;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+    .scope-note strong { color: var(--text-main); }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="back-link">&larr; Back to Operating Support Services, LLC</a>
+    </div>
+  </header>
 
+  <main class="page-wrap">
+    <span class="eyebrow">Modeling &amp; Decision-Support Preview</span>
+    <h1>Six-Year Rolling Tax &amp; Retirement Cash-Flow Planner</h1>
+    <p class="lead">
+      A structured multi-year planning model designed to test S-Corp compensation, multi-state
+      revenue apportionment, and retirement contribution trade-offs before locking in annual decisions.
+    </p>
+
+    <section class="preview-frame" aria-label="Application Preview">
+      <!--
+        When your sanitized screenshot is uploaded to the repo root as rolling-tax-planner-preview.png,
+        remove the <div class="preview-placeholder"> block and uncomment the <img> line below:
+      -->
+      <!-- <img src="/rolling-tax-planner-preview.png" alt="Sample six-year rolling tax and retirement horizon view" /> -->
+      <div class="preview-placeholder">
+        <strong>Sample Horizon Preview</strong><br />
+        Upload your sanitized screenshot as <code>rolling-tax-planner-preview.png</code> in the repository root to display the live UI view here.
+      </div>
+      <p class="preview-caption">
+        <strong>Sample Preview (Illustrative Data Only):</strong> Multi-year horizon view illustrating
+        how W-2 compensation, defined benefit / retirement contributions, state apportionment splits,
+        and cash-flow guardrails interact across a rolling six-year window. All figures shown are
+        sample modeling data for demonstration purposes.
+      </p>
+    </section>
+
+    <section class="pillars" aria-label="Core Architectural Capabilities">
+      <div class="pillar-card">
+        <h2>Rolling Six-Year Horizon</h2>
+        <p>
+          Projects cash flow, tax exposure, and contribution capacity across a multi-year window
+          rather than treating each tax year in isolation.
+        </p>
+      </div>
+      <div class="pillar-card">
+        <h2>Multi-State &amp; Entity Rules</h2>
+        <p>
+          Models split-state revenue apportionment and entity compensation mechanics with explicit
+          guardrails and rule checks.
+        </p>
+      </div>
+      <div class="pillar-card">
+        <h2>Retirement &amp; Plan Modeling</h2>
+        <p>
+          Evaluates contribution caps, funding
